@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <label for="firstname">firstname</label>
+            <br>
+            <input type="text" name="firstname" id="firstname" placeholder="Enter the firstname" autofocus>
+        </div>
+        <div>
+            <label for="lastname">lastname</label>
+            <br>
+            <input type="text" name="lastname" id="lastname" placeholder="Enter the lastname">
+        </div>
+        <div>
+            <label for="password">password</label>
+            <br>
+            <input type="password" name="password" id="password" placeholder="Enter the password">
+        </div>
+        <div>
+            <label for="decade">decade</label>
+            <br>
+            <input type="number" name="decade" id="decade" placeholder="Enter your decade" min="1980" max="2030"
+                step="10" value="2000">
+        </div>
+
+        <div>
+            <label for="games">favourite games</label>
+            <select name="games" id="games">
+                <optgroup label="outdoor games">
+                    <option value="basketball">Basketball</option>
+                    <option value="baseball">Baseball</option>
+                    <option value="cricket">cricket</option>
+                </optgroup>
+                <optgroup label="indoor games">
+                    <option value="carrom">Carrom</option>
+                    <option value="pool">Pool</option>
+                    <option value="chess">Chess</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="beverages">Beverages list</label>
+            <input type="text" id="beverages" name="beverages" list="beverages-list">
+            <datalist id="beverages-list">
+                <option value="Coffee">Coffee</option>
+                <option value="Tea">Tea</option>
+                <option value="Soda">Soda</option>
+                <option value="Juice">Juice</option>i
+            </datalist>
+        </div>
+        <hr>
+
+        <div>
+            <fieldset>
+                <legend>what is your favourite programing language ?</legend>
+                <div>
+                    <input type="radio" name="python" id="python" value="python">
+                    <label for="">Python</label>
+                </div>
+                <div>
+                    <input type="radio" name="java" id="java" value="java">
+                    <label for="">Java</label>
+                </div>
+                <div>
+                    <input type="radio" name="javascript" id="javascript" value="javascript">
+                    <label for="">JavaScript</label>
+                </div>
+                <div>
+                    <input type="radio" name="golang" id="golang" value="golang">
+                    <label for="">Golang</label>
+                </div>
+                
+            </fieldset>
+
+        </div>
+    </form>
+</body>
+
+</html>
